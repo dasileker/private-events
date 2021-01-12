@@ -1,19 +1,6 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
+/* = require_tree.
+ * = require_self
  */
-
 
 * {
   box-sizing: border-box;
@@ -21,16 +8,12 @@
   width: auto;
 }
 
-
-
 body {
   width: auto;
   background-color: rgb(210, 105, 30);
 }
 
-
-.container{
-
+.container {
   width: 500px;
   margin-top: 50px;
   color: white;
@@ -39,8 +22,7 @@ body {
   padding: 50px;
   margin-left: 450px;
   background-color: red;
-} 
-
+}
 
 button {
   width: 100px;
@@ -48,33 +30,25 @@ button {
   background-color: black;
 }
 
-button, a {
-  color:  #82b74b;
-  text-decoration: none;
-}
-
 button:hover {
   background-color: white;
 }
 
-button, a:hover {
+button,
+a:hover {
   color: blue;
   text-decoration: none;
 }
 
 nav {
-
   height: 50px;
   margin-top: -8px;
   background-color: white;
-
-
 }
 
 .header_link,
 a {
   padding: 10px;
-
 }
 
 .header_link
@@ -91,7 +65,6 @@ button {
   margin-top: -12px;
 }
 
-
 .login {
   float: right;
   margin: -20px 0px 0px 20px;
@@ -103,7 +76,6 @@ input {
   margin-top: 10px;
 }
 
-
 .btn {
   width: 50px;
   height: 20px;
@@ -111,7 +83,7 @@ input {
 }
 
 .colar1 {
-  color:  black;
+  color: black;
 }
 
 .colar2 {
@@ -119,11 +91,9 @@ input {
 }
 
 .colar3 {
-  color: #034f84;
+  color:#034f84;
 }
 
 .colar4 {
   color: #1a0136;
 }
-
-
