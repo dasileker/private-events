@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
   def create
     @user = User.find_by(email: params[:session][:email].downcase)
     if @user
-      log_in @user
+      login_url @user
       redirect_to @user
     else
       flash[:warning] = "Invalid email."
