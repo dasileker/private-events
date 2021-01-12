@@ -1,0 +1,22 @@
+<h1><%= @user %>create a new event:</h1>
+
+<div class="form">
+  <%= form_for @event, url: {action: 'create'} do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+
+    <%= f.label :Event_Name %>
+    <%= f.text_field :title, autofocus: true %><br>
+
+    <%= f.label :location_City %>
+    <%= f.text_field :location %><br>
+
+    <%= f.label :date %>
+    <%= f.date_field :date, value: Date.current %><br>
+
+    <%= f.label :start_time %>  
+    <%= f.time_field :start_time, :value => Time.now.to_s(:time) %><br>
+
+    <%= f.submit "Create Event" %>
+  <% end %>
+</div>
+<%= link_to "Back", current_user %>

@@ -1,0 +1,19 @@
+<h1>Events</h1>
+
+<h3>Upcoming Events</h3>
+
+  <ul class="events upcoming_events">
+    <%= render @events.upcoming %>
+  </ul>
+
+<h3>Past Events</h3>
+
+  <ul class="events past_events">
+    <%= render @events.past %>
+  </ul>
+
+<% if current_user %>
+  <%= link_to "Back", current_user %>
+<% else %>
+  <%= link_to "Log in to manage events", login_path %>
+<% end %>

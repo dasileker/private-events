@@ -1,0 +1,23 @@
+<h1>Event Page: <%= @event.title %></h1>
+
+<p>This event was created by <%= @event.organizer.username %>.</p>
+
+<h3>Event information:</h3>
+
+<ul>
+  <li><b>Event location:</b> <%= @event.location %></li>
+  <li><b>Event Date:    </b> <%= @event.date %></li>
+  <li><b>Event Start:   </b> <%= @event.start_time %></li>
+</ul>
+
+<h3>Event attendees:</h3>
+
+<ul class="attendees">
+  <%= render @attendees %>
+</ul>
+
+<% if current_user %>
+  <%= link_to "Back", current_user %>
+<% else %>
+  <%= link_to "Log in to manage events", login_path %>
+<% end %>
