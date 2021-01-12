@@ -13,9 +13,6 @@ Currently attendees must be added to events via the command line. Invitations wi
 	 Private Events
   </h3>
 
-  <h3 align="center">
-	 Live Version - https://eventrix.herokuapp.com/
-  </h3>
 
   <p align="center">
     Users signin and create events and then view various events in order of previous, upcoming and present events. Users can send invitations to events and also attend events created by other users. Events take place at a specific date and at a location.
