@@ -1,5 +1,4 @@
 class User < ApplicationRecord
-
   before_save :downcase_email
 
   validates :username, presence: true, uniqueness: true
@@ -15,4 +14,5 @@ class User < ApplicationRecord
   def downcase_email
     email.downcase!
   end
+
 end

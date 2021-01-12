@@ -1,5 +1,4 @@
-class UserController < ApplicationController
-
+class UsersController < ApplicationController
   def new
     @user = User.new
   end
@@ -8,7 +7,7 @@ class UserController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       flash[:success] = "User created."
-      login_url @user
+      log_in @user
       redirect_to @user
     else
       render 'new'
@@ -18,7 +17,7 @@ class UserController < ApplicationController
   def show
     @user = User.find(params[:id])
     @organized_events = @user.organized_events
-    redirect_to root_url and return unless @user == @user
+    redirect_to root_url and return unless @user == current_user
   end
 
   private
