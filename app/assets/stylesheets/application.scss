@@ -53,4 +53,77 @@ button, a {
   text-decoration: none;
 }
 
+button:hover {
+  background-color: white;
+}
+
+button, a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+nav {
+
+  height: 50px;
+  margin-top: -8px;
+  background-color: white;
+
+
+}
+
+.header_link,
+a {
+  padding: 10px;
+
+}
+
+.header_link
+a:hover {
+  color:blue ;
+}
+
+.links {
+  float: right;
+}
+
+.links,
+button {
+  margin-top: -12px;
+}
+
+
+.login {
+  float: right;
+  margin: -20px 0px 0px 20px;
+}
+
+.enter,
+input {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+
+.btn {
+  width: 50px;
+  height: 20px;
+  margin-left: 120px;
+}
+
+.colar1 {
+  color:  black;
+}
+
+.colar2 {
+  color: #feb236;
+}
+
+.colar3 {
+  color: #034f84;
+}
+
+.colar4 {
+  color: #1a0136;
+}
+
 
