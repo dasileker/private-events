@@ -1,6 +1,5 @@
 class SessionsController < ApplicationController
-  def new
-  end
+  def new; end
 
   def create
     @user = User.find_by(email: params[:session][:email].downcase)
@@ -8,7 +7,7 @@ class SessionsController < ApplicationController
       log_in @user
       redirect_to @user
     else
-      flash[:warning] = "Invalid email."
+      flash[:warning] = 'Invalid email.'
       render 'new'
     end
   end
