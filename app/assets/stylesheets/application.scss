@@ -24,6 +24,22 @@ body {
   background-color: red;
 }
 
+a {
+  color: #feb236;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.header_link,
+a {
+  padding: 10px;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
 button {
   width: 100px;
   height: 30px;
@@ -34,12 +50,6 @@ button:hover {
   background-color: white;
 }
 
-button,
-a:hover {
-  color: blue;
-  text-decoration: none;
-}
-
 nav {
   height: 50px;
   margin-top: -8px;
@@ -47,27 +57,17 @@ nav {
 }
 
 .header_link,
-a {
-  padding: 10px;
-}
-
-.header_link
 a:hover {
-  color:blue ;
+  color: blue;
 }
 
 .links {
   float: right;
 }
 
-.links,
-button {
-  margin-top: -12px;
-}
-
 .login {
   float: right;
-  margin: -20px 0px 0px 20px;
+  margin-top: -20px;
 }
 
 .enter,
@@ -91,7 +91,7 @@ input {
 }
 
 .colar3 {
-  color:#034f84;
+  color: #034f84;
 }
 
 .colar4 {
