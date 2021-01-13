@@ -16,6 +16,9 @@
 
     <ul class="events upcoming_events">
       <%= render @user.attended_events.upcoming %>
+      <ol class="events">
+      <%= render @upcoming_events %>
+    </ol>
     </ul>
 </div>
 
