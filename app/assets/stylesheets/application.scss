@@ -10,7 +10,7 @@
 
 body {
   width: auto;
-  background-color: rgb(210, 105, 30);
+  background-color: white;
 }
 
 .container {
@@ -18,16 +18,17 @@ body {
   margin-top: 50px;
   color: white;
   text-align: center;
-  border: 15px solid yellow;
+  border: 15px solid lightblue;
   padding: 50px;
   margin-left: 450px;
-  background-color: red;
+  background-color: grey;
 }
 
 a {
-  color: #feb236;
+  color: white;
   text-decoration: none;
   padding: 10px;
+  font-size: 14px;
 }
 
 .header_link,
@@ -36,19 +37,19 @@ a {
 }
 
 a:hover {
-  color: blue;
+  color: whitesmoke;
   text-decoration: none;
 }
 
 button {
   width: 100px;
-  height: 30px;
-  background-color: black;
+  height: 40px;
+  background-color: lightslategray;
 }
 
 .links,
 button {
-  margin-top: -20px;
+  margin-top: -12px;
 }
 
 button:hover {
@@ -58,7 +59,7 @@ button:hover {
 nav {
   height: 50px;
   margin-top: -8px;
-  background-color: white;
+  background-color: black;
 }
 
 .header_link,
@@ -92,7 +93,7 @@ input {
 }
 
 .colar2 {
-  color: #feb236;
+  color: #ff7b25;
 }
 
 .colar3 {
