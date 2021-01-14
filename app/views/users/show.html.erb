@@ -24,9 +24,9 @@
 <div class="colar4">
   <h3>All your past events:</h3>
   
-    <% if @user.organized_events.past %>
+    <% if @user.organized_events.previous %>
         <ol class="events">
-          <%= render @past_events %>
+          <%= render @previous_events %>
         </ol>
     <% end %>
 
