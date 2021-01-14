@@ -21,8 +21,8 @@ class EventsController < ApplicationController
 
   def index
     @events = Event.all
-    @previous_events = Event.previous
-    @upcoming_events = Event.upcoming
+    # @previous_events = Event.previous
+    # @upcoming_events = Event.upcoming
     redirect_to root_url and return unless logged_in?
   end
 
