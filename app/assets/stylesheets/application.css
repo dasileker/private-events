@@ -53,18 +53,18 @@ button {
 }
 
 button:hover {
-  background-color: white;
+  background-color: lightgreen;
 }
 
 nav {
   height: 50px;
   margin-top: -8px;
-  background-color: black;
+  background-color: blue;
 }
 
 .header_link,
 a:hover {
-  color: blue;
+  color: black;
 }
 
 .links {
