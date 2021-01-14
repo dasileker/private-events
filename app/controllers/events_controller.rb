@@ -25,14 +25,6 @@ class EventsController < ApplicationController
     @upcoming_events = Event.upcoming
     redirect_to root_url and return unless logged_in?
 
-    # if logged_in?
-    #   @previous_events = Event.previous
-    #   @upcoming_events = Event.upcoming
-    #   @orginized_events = @user.organized_events
-    #   redirect_to root_url and return unless logged_in?
-    # end
-  end
-
   private
 
   def event_params
