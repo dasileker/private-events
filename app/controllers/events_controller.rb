@@ -24,6 +24,7 @@ class EventsController < ApplicationController
     @previous_events = Event.previous
     @upcoming_events = Event.upcoming
     redirect_to root_url and return unless logged_in?
+  end
 
   private
 
