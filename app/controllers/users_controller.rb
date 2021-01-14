@@ -1,6 +1,4 @@
 class UsersController < ApplicationController
-
-  
   def new
     @user = User.new
   end
@@ -21,7 +19,7 @@ class UsersController < ApplicationController
     @organized_events = @user.organized_events
     @previous_events = @user.organized_events.previous
     @upcoming_events = @user.organized_events.upcoming
-    redirect_to root_url and return unless @user == @user
+    redirect_to root_url and return unless @user == current_user
   end
 
   private
