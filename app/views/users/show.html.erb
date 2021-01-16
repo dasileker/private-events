@@ -14,21 +14,17 @@
 <div class="colar3">
   <h3>All your upcoming events:</h3>
 
-    <% if @user.organized_events.upcoming %>
-      <ol class="events">
-        <%= render @upcoming_events %>
-      </ol>
-    <% end %>
+    <ul class="events upcoming_events">
+      <%= render @organized_events.upcoming %>
+    </ul>
 </div>
 
 <div class="colar4">
   <h3>All your past events:</h3>
-  
-    <% if @user.organized_events.past %>
-        <ol class="events">
-          <%= render @past_events %>
-        </ol>
-    <% end %>
+
+  <ul class="events past_events">
+    <%= render @organized_events.past %>
+  </ul>
 
   <div class="colar5">
     <%= link_to "Create a new event", new_event_path %><br>

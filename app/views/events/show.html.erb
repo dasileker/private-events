@@ -1,13 +1,13 @@
 <h1>Event Page: <%= @event.title %></h1>
 
-<p>This event was created by <%= @event.organizer.username %>.</p>
+<p>This event was created by <%= current_user.username %>.</p>
 
 <h3>Event information:</h3>
 
 <ul>
   <li><b>Event location:</b> <%= @event.location %></li>
   <li><b>Event Date:    </b> <%= @event.date %></li>
-  <li><b>Event Start:   </b> <%= @event.date_change %></li>
+  <li><b>Event Start:   </b> <%= @event.date_for_database %></li>
 </ul>
 
 <h3>Event attendees:</h3>

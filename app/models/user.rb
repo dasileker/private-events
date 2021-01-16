@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   before_save :downcase_email
 
-  validates :username, presence: true, uniqueness: true
+  validates :username, presence: true, uniqueness: true, length: { maximum: 25 }
   validates :email, presence: true, length: { maximum: 255 },
                     uniqueness: { case_sensitive: false }
 

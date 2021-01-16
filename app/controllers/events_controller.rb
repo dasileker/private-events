@@ -4,7 +4,7 @@ class EventsController < ApplicationController
   end
 
   def create
-    @event = Event.new(event_params)
+    @event = current_user.organized_events.build(event_params)
     if @event.save
       flash[:success] = 'Event created.'
       redirect_to current_user
@@ -21,8 +21,6 @@ class EventsController < ApplicationController
 
   def index
     @events = Event.all
-    # @previous_events = Event.previous
-    # @upcoming_events = Event.upcoming
     redirect_to root_url and return unless logged_in?
   end
 
