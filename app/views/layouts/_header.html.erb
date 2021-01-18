@@ -1,0 +1,19 @@
+<nav>
+  <div class="header_link">
+		<div>
+			<%= link_to "Home", root_url %> 
+			<%= link_to "All Events", events_path %> 
+		</div>
+		<% if logged_in? %>
+		<div class="links">
+			<button><%= link_to "My Profile", current_user %></button>
+			<button><%= link_to "Log out", logout_path, method: :delete %></button>
+		</div>
+		<% else %>
+		<div class='login'>
+				<button><%= link_to "Sign up", signup_path %></button>
+				<button><%= link_to "Log in", login_path %></button>
+			<% end %>
+		</div>
+	</div>
+</nav>

@@ -1,0 +1,7 @@
+<li id='event-<%=event.id%>'>
+    <span class="event"><b>Event:</b> <%= link_to event.title, event %></span> |
+    <!-- <span class="event"><b>Event name:</b> <%= event.title %></span> | -->
+    <span class="location"><b>Location:</b> <%= event.location %></span> |
+    <span class="content"><b>Date:</b> <%= event.date %></span> |
+    <span class="timestamp"><b>Created at:</b> <%= time_ago_in_words(event.created_at) %> ago. </span>
+</li>

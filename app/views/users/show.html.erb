@@ -1,0 +1,32 @@
+<div class="colar1">
+  <h1>Welcome, <%= current_user.username %>!</h1>
+</div>
+
+<div class="colar2">
+  <h3>Events you created:</h3>
+  <% if @user.organized_events.any? %>
+    <ol class="events">
+      <%= render @organized_events %>
+    </ol>
+  <% end %>
+</div>
+
+<div class="colar3">
+  <h3>All your upcoming events:</h3>
+
+    <ul class="events upcoming_events">
+      <%= render @organized_events.upcoming %>
+    </ul>
+</div>
+
+<div class="colar4">
+  <h3>All your past events:</h3>
+
+  <ul class="events past_events">
+    <%= render @organized_events.past %>
+  </ul>
+
+  <div class="colar5">
+    <%= link_to "Create a new event", new_event_path %><br>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="sign_up">
+  <h1>Sign_up:</h1>
+
+  <%= form_for @user, url: {action: "create"} do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+  <div class="enter">
+      <%= f.label :user_name %>
+      <%= f.text_field :username %><br>
+
+      <%= f.label :user_email %>
+      <%= f.email_field :email %><br>
+
+    <div class="btn">
+      <%= f.submit "Sign Up" %>
+    </div>
+
+    <% end %>
+  </div>
+
+  <p>Already signed up? <%= link_to "Log in here.", login_path %></p>
+
+</div>

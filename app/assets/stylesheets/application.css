@@ -1,0 +1,136 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+* {
+  box-sizing: border-box;
+  height: auto;
+  width: auto;
+}
+
+body {
+  width: auto;
+  background-color: white;
+}
+
+.container {
+  width: 500px;
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+  border: 15px solid lightblue;
+  padding: 50px;
+  margin-left: 450px;
+  background-color: grey;
+}
+
+.event,
+h1 {
+  color: #1a0136;
+}
+
+.event,
+h3 {
+  color: #ff7b25;
+}
+
+.event1,
+h3 {
+  color: aqua;
+}
+
+.event1,
+ul {
+  color: #3e4444;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.header_link,
+a {
+  padding: 10px;
+}
+
+a:hover {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  background-color: lightslategray;
+}
+
+.links,
+button {
+  margin-top: -12px;
+}
+
+button:hover {
+  background-color: lightgreen;
+}
+
+nav {
+  height: 50px;
+  margin-top: -8px;
+  background-color: blue;
+}
+
+.header_link,
+a:hover {
+  color: black;
+}
+
+.links {
+  float: right;
+}
+
+.login {
+  float: right;
+  margin-top: -12px;
+}
+
+.enter,
+input {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.btn {
+  width: 50px;
+  height: 20px;
+  margin-left: 120px;
+}
+
+.colar1 {
+  color: black;
+}
+
+.colar2 {
+  color: #ff7b25;
+}
+
+.colar3 {
+  color: #034f84;
+}
+
+.colar4 {
+  color: #1a0136;
+}

@@ -1,0 +1,11 @@
+<h1>Private Events</h1>
+
+<p>Log in to see your events.</p>
+
+<%= form_for(:session, url: login_path) do |f| %>
+  <%= f.label :email %>
+  <%= f.email_field :email %>
+  <%= f.submit "Log in" %>
+<% end %>
+
+<p>New user? <%= link_to "Sign up here.", signup_path %></p>
