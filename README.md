@@ -9,7 +9,9 @@ Currently attendees must be added to events via the command line. Invitations wi
 
 - Ruby  <img src="https://img.icons8.com/officexs/16/000000/ruby-programming-language.png"/> => <a href="https://icons8.com/icon/4mBPKZ320Bgr/ruby-programming-language">Ruby Programming Language icon by Icons8</a>
 
-- Ruby on Rails  <img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/ruby-on-rails-512.png" style="width: 30px; margin-top: 20px;">
+- Ruby on Rails
+
+- Rspec
 
 
 ## Project result
