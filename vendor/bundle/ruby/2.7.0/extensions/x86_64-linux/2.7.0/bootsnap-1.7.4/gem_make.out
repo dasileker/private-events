@@ -1,0 +1,15 @@
+current directory: /home/zerradi/desktop/private-events/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.7.4/ext/bootsnap
+/usr/bin/ruby2.7 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20210428-1218-hbfo1g.rb extconf.rb
+creating Makefile
+
+current directory: /home/zerradi/desktop/private-events/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.7.4/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /home/zerradi/desktop/private-events/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.7.4/ext/bootsnap
+make DESTDIR\=
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/zerradi/desktop/private-events/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.7.4/ext/bootsnap
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20210428-1218-2svfi6/bootsnap

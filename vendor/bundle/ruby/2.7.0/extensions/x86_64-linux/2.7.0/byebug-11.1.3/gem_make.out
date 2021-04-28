@@ -1,0 +1,19 @@
+current directory: /home/zerradi/desktop/private-events/vendor/bundle/ruby/2.7.0/gems/byebug-11.1.3/ext/byebug
+/usr/bin/ruby2.7 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20210428-1218-1p5x90x.rb extconf.rb
+creating Makefile
+
+current directory: /home/zerradi/desktop/private-events/vendor/bundle/ruby/2.7.0/gems/byebug-11.1.3/ext/byebug
+make DESTDIR\= clean
+
+current directory: /home/zerradi/desktop/private-events/vendor/bundle/ruby/2.7.0/gems/byebug-11.1.3/ext/byebug
+make DESTDIR\=
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/zerradi/desktop/private-events/vendor/bundle/ruby/2.7.0/gems/byebug-11.1.3/ext/byebug
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20210428-1218-1y3ph9e/byebug
