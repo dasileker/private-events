@@ -18,7 +18,9 @@ Currently attendees must be added to events via the command line. Invitations wi
 
 <img src="events.png">
 
+## Live Demo Link
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://event-private.herokuapp.com/)
 ## How to run the proaject
 
 - Open the terminal or bash and type <code> git clone https://github.com/dasileker/private-events</code>
